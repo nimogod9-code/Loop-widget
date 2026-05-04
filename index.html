@@ -1167,7 +1167,7 @@ const provider = new GoogleAuthProvider();
 
 // AUTH
 onAuthStateChanged(auth, (user) => {
-  if(user) alert("UID: " + user.uid + "\nADMIN: " + ADMIN_UID);
+
   const loginBtn = document.getElementById('login-btn');
   const adminInfo = document.getElementById('admin-info');
   if (user && user.uid === ADMIN_UID) {
